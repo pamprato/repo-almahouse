@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>almahouse</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../assets/img/logo-fondo-verde.jpg" type="image/x-icon" />
+
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/ccs/style.css">
+</head>
+
+<!-- Body -->
+
+<body>
+
+    <!--Header-->
+    <header class="container-fluid py-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <a href="./index.html">
+                <img src="../assets/img/logo-verde-oscuro-transparente.png" alt="logo" height="75">
+            </a>
+
+            <!-- Menú de navegación -->
+            <nav class="navbar navbar-expand-lg custom-navbar">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./propiedades.html">Propiedades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./alma-blog.html">AlmaBlog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+
+    <!-- Contenedor principal -->
+    <main class="container py-5">
+
+        <div class="row">
+
+            <!-- Columna 1: Datos de contacto -->
+
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <h4>Contáctanos</h4>
+
+                <div class="contact-info">
+                    <p>Av. Libertador, Caracas, Venezuela</p>
+
+                    <h4>+58 424 158 58 94</h4>
+                    <h4>info@almahouse.com.ve</h4>
+                    
+                    <h6>Síguenos</h6>
+                    <div class="social-icons">
+                        <a href="#" class="me-3" target="_blank">
+                            <i class="bi bi-facebook custom-icon-color" style="font-size: 30px;"></i>
+                        </a>
+                        <a href="#" class="me-3" target="_blank">
+                            <i class="bi bi-instagram custom-icon-color" style="font-size: 30px;"></i>
+                        </a>
+                        <a href="#" class="me-3" target="_blank">
+                            <i class="bi bi-youtube custom-icon-color" style="font-size: 30px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 2: Formulario de contacto -->
+            <div class="col-12 col-md-6">
+                
+                <form action="#" method="POST">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Tu email">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" id="phone" placeholder="Tu número de teléfono">
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" rows="4"
+                            placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-custom w-100">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="container-fluid text-white py-4">
+        <div class="container-fluid text-center">
+            <img src="../assets/img/logo-blanco-transparente.png" alt="logo" height="50">
+            <p class="mt-2">Our vision is to provide convenience and help increase your sales business.</p>
+            <hr class="my-3">
+            <p>&copy; 2025 Alma House Services. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scrip Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
