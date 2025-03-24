@@ -1,0 +1,24 @@
+/* Mixin para los colores de texto en los enlaces y los iconos */
+@mixin link-hover($color-default, $color-hover) {
+    color: $color-default;
+
+    &:hover {
+        color: $color-hover;
+    }
+}
+
+/* Mixin para los fondos personalizados */
+@mixin bg-custom($bg-color) {
+    background-color: $bg-color;
+}
+
+/* Mixin para los botones personalizados */
+@mixin btn-custom($bg-color, $color, $hover-color) {
+    background-color: $bg-color;
+    color: $color;
+    border: none;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}

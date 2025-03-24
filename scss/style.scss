@@ -1,0 +1,107 @@
+@use 'custom-variables' as *;
+@use 'mixins' as *;
+
+
+
+/* Reset global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary-color;
+}
+
+/* Párrafos */
+p {
+    color: $primary-color;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+// EJEMPLO EXTEND
+
+/* Menú navegación */
+.custom-navbar .nav-link {
+    @include link-hover($primary-color, $tertiary-color);
+}
+
+// EJEMPLO ANIDACION
+
+/*Iconos */
+.custom-icon-color {
+    color: $primary-color;
+
+    &:hover {
+        color: $tertiary-color;
+    }
+}
+
+// EJEMPLO MIXIN
+
+/* Fondos */
+.bg-custom-light {
+    @include bg-custom($bg-light);
+}
+
+.bg-custom-dark {
+    @include bg-custom($bg-dark);
+}
+
+.img-fondo-propiedades {
+    background-image: url(../assets/img/fondo-propiedades.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    align-content: center;
+}
+
+/* Botones */
+.btn-custom {
+    @include btn-custom($color-btn-custom, $secondary-color, $tertiary-color);
+}
+
+.btn-dark {
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 25px;
+
+    &:hover {
+        background-color: $tertiary-color;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    height: 364px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100px;
+        height: auto;
+    }
+
+    p {
+        color: $secondary-color;
+    }
+}
